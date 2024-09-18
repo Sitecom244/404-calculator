@@ -59,11 +59,11 @@ function calcformCalculate() {
     const factor = Number((LOCAL_FACTOR * GLOBAL_FACTOR).toFixed(5));
 
     if (!(validateNumber(length) && validateNumber(width) && validateNumber(height) && validateNumber(quantity))) {
-        AlertMSG('Please enter valid numbers for all dimensions and quantity.');
+        AlertMSG('Voer geldige cijfers in voor alle afmetingen en aantallen.');
         return;
     }
     if (quantity < 1 || quantity >= 1001) {
-        AlertMSG('The price for less than 1 or 1000 or more boxes cannot be calculated online. Please request a quote.');
+        AlertMSG('De prijs voor meer dan 1.000 dozen kunnen wij niet online berekenen. Neem contact met ons op om hier een offerte voor te ontvangen.');
         return;
     }
 
